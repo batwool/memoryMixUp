@@ -51,12 +51,13 @@ export class MemoryMixUp extends Phaser.Scene {
     * INTRO SCREEN
     * ------------------------------------------------ */
     showIntro() {
-        // Create intro background sprite with centered origin
-        this.introBG = this.add.sprite(400, 300, 'spritesheet0');  // Position at the center of the screen
-        this.introBG.setOrigin(0.5, 0.5).setPosition(400, 300);  // Center origin and adjust scale
-        
+        this.introBG = this.add.sprite(400, 300, 'spritesheet0');
+        this.introBG.setOrigin(0.5, 0.5);  // Center it properly
+        this.introBG.setScale(0.5);  // Adjust the scale (you can tweak the value)
+    
         // Play the intro animation
         this.introBG.play('introAnimation');
     }
+    
     
 }

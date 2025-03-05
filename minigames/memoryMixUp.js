@@ -4,7 +4,7 @@ export class MemoryMixUp extends Phaser.Scene {
     }
 
         preload() {
-            this.load.image('intro_scene_MemoryMixUp', '/assets/introScene_MemoryMixUp.png');
+            this.load.image('intro_scene_MemoryMixUp', 'assets/introScene_MemoryMixUp.png');
         }
 
 

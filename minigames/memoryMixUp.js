@@ -11,7 +11,8 @@ export class MemoryMixUp extends Phaser.Scene {
     create() {
         // Create and play the video
         this.introBG = this.add.video(400, 300, 'introVideo');  
-        this.introBG.setOrigin(0.5, 0.5).setScale(0.5,0.5);
-        this.introBG.play(true); // True = loop the video
+        this.introBG.setOrigin(0.5, 0.575).setScale(.76,.77);
+        this.introBG.play(true);
+        this.introBG.setMute(true);
     }
 }

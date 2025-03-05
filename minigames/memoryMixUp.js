@@ -31,14 +31,17 @@ export class MemoryMixUp extends Phaser.Scene {
         this.anims.create({
             key: 'introAnimation',
             frames: this.anims.generateFrameNames('spritesheet0', {
-                start: 0,
-                end: 336, // Frame count minus 1 (0-indexed)
-                zeroPad: 4, // Zero padding for the frame numbers (e.g. frame0000, frame0001, etc.)
-                prefix: 'frame', // Prefix of the frame filenames
+                start: 1,
+                end: 336, // Adjust this based on your actual frame count
+                zeroPad: 4, // Adjust for 4 digits, matching the '0001' format
+                prefix: 'output_frame_', // Match the filenames in the JSON
+                suffix: '.png' // Ensure it matches the extension in the JSON
             }),
-            frameRate: 10, // Adjust frame rate as needed
-            repeat: -1, // Set to -1 for infinite looping
+            frameRate: 10,
+            repeat: -1,
         });
+        
+        
 
         // Start the intro screen
         this.showIntro();

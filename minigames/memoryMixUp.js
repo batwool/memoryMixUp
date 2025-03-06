@@ -46,7 +46,7 @@ export class MemoryMixUp extends Phaser.Scene {
 
     addCardSpot(x, y) {
         // Create an invisible rectangle where the card will be
-        let cardSpot = this.add.rectangle(x, y, 90, 100, 0x000000, 0.2)
+        let cardSpot = this.add.rectangle(x, y, 90, 100, 0x000000, 0)
             .setInteractive();
 
         // Click to place the card

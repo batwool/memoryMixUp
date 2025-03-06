@@ -39,7 +39,6 @@ export class MemoryMixUp extends Phaser.Scene {
                 .setOrigin(.14, -.14)
                 .setScale(1.045, 1.045);
 
-            // ✅ Corrected method call
             this.addCardSpot(190.5, 104.5);
         });
     }
